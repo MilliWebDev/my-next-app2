@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { lusitana } from '@/app/ui/fonts';
+import {  arvo } from '@/app/ui/fonts';
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${lusitana.className} antialiased `}
+        className={`${arvo.className} antialiased `}
       >
         {children}
       </body>

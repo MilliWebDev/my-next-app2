@@ -1,10 +1,6 @@
 'use client';
 
-import {
-  UserGroupIcon,
-  HomeIcon,
-  DocumentDuplicateIcon,
-} from '@heroicons/react/24/outline';
+
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -14,13 +10,13 @@ import { useState } from 'react';
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
 const links = [
-  { name: 'Accueil', href: '/dashboard', icon: HomeIcon },
+  { name: 'Accueil', href: '/dashboard' },
   {
     name: 'Boutiques',
-    href: '/dashboard/invoices',
-    icon: DocumentDuplicateIcon,
+    href: '/dashboard/invoices'
+    
   },
-  { name: 'Articles', href: '/dashboard/customers', icon: UserGroupIcon },
+  { name: 'Articles', href: '/dashboard/customers' },
 ];
 
 export default function NavLinks() {
@@ -34,9 +30,9 @@ export default function NavLinks() {
 
 
   return (
-    <nav className="bg-white shadow-md w-full">
+    <nav className="h-96 bg-black md:bg-right-bottom bg-no-repeat bg-[url('/hero.png')] w-screen">
       {/* Container for navbar items */}
-      <div className="max-w-screen-xl mx-auto flex justify-between items-center p-4">
+      <div className="w-screen h-full  flex justify-between  p-4">
         
         {/* Logo Section */}
         <div className={`text-2xl font-bold text-blue-600 ${isMenuOpen ? 'hidden' : ''}`}>
@@ -45,33 +41,27 @@ export default function NavLinks() {
         
         {/* Hamburger menu button (visible only on mobile) */}
         <button
-          className="block md:hidden p-2"
+          className="flex items-start md:hidden p-2 text-white"
           onClick={toggleMenu}
         >
           ☰
         </button>
 
-        {/* Search (links) section */}
-        <div className={`text-2xl font-bold text-blue-600 ${isMenuOpen ? 'hidden' : ''}`}>
-          <Link href="/">Logo</Link>
-        </div>
-
-        
         {/* Menu (links) section */}
         <div
-          className={`md:flex items-center gap-4 ${isMenuOpen ? 'flex' : 'hidden'} md:block`}
+          className={`md:flex items-start gap-4 ${isMenuOpen ? 'flex' : 'hidden'} md:block`}
         >
           {/* Loop through each link */}
           {links.map((link) => {
-            const LinkIcon = link.icon;
+            
 
             return (
               <Link
                 key={link.name}
                 href={link.href}
-                className={`font-bold flex items-center gap-2 p-3 text-xl hover:bg-sky-100 hover:text-blue-600 rounded-md }`}
+                className={`font-bold flex  gap-2 p-3 text-white text-xl hover:bg-white hover:text-blue-600 rounded-md }`}
               >
-                <LinkIcon className="w-6" />
+              
                 <p className="hidden md:block">{link.name}</p>
               </Link>
             );
