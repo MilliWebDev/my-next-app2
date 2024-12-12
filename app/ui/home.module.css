@@ -1,0 +1,6 @@
+.backgroundnew{
+    background-image:  url('/hero.png'), url('/cloud.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+}

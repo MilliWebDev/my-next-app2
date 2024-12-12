@@ -3,6 +3,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import styles from '@/app/ui/home.module.css';
 
 //import { usePathname } from 'next/navigation';
 //import clsx from 'clsx';
@@ -30,7 +31,7 @@ export default function NavLinks() {
 
 
   return (
-    <nav className="h-96 bg-black md:bg-right-bottom bg-no-repeat bg-[url('/hero.png')] w-screen">
+    <nav className={`max-w-screen ${styles.backgroundnew}`}>
       {/* Container for navbar items */}
       <div className="w-screen h-full  flex justify-between  p-4">
         

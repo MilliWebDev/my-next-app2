@@ -4,7 +4,7 @@
 const HeroSection = () => {
     return (
       <section className="mt-5 mx-10 relative bg-gradient-to-r from-blue-500 to-teal-500 text-white h-96 flex items-center justify-center rounded">
-        <div className="absolute inset-0 bg-cover bg-center bg-[url('/hero.jpg')]">
+        <div className="absolute inset-0 bg-cover bg-center bg-[url('/hero.png')]">
         </div>
         <div className="relative z-10 text-center px-4 sm:px-8">
           <h1 className="text-4xl sm:text-6xl font-extrabold leading-tight mb-4">
