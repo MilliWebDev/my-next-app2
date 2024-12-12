@@ -59,10 +59,10 @@ export default function NavLinks() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`font-bold flex  gap-2 p-3 text-white text-xl hover:bg-white hover:text-blue-600 rounded-md }`}
+                className={`font-bold flex items-start gap-2 p-2 text-white text-xl hover:border-b hover:border-sky-500 }`}
               >
               
-                <p className="hidden md:block">{link.name}</p>
+                <p>{link.name}</p>
               </Link>
             );
           })}

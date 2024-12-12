@@ -2,7 +2,7 @@
 
 const Card = () => {
     return (
-      <div className="w-full rounded overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+      <div className="max-w-sm h-50 rounded overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
         <div className="p-6">
           <h2 className="text-xl font-bold text-gray-800 mb-2">Love</h2>
           <p className="text-gray-600 mb-4">Gotta try again dfdsgjg fgdfgfdg fgfgfdgdfg fgfdg fghghgfh ghghghgh ghgfhgfhg ghgfhgfhgh ghgfhgfhgfh hggfhghgf ghgfhghg gfhgfhg ghgfhghg</p>
