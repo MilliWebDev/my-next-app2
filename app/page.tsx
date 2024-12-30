@@ -1,7 +1,7 @@
 //import Image from "next/image";
 //import Link from 'next/link';
 import NavLinks from "./ui/nav-links";
-import Card from "./ui/card";
+//import Card from "./ui/card";
 //import Create from "./ui/background";
 import Image from "next/image";
 
