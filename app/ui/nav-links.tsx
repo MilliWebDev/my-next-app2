@@ -31,9 +31,9 @@ export default function NavLinks() {
 
 
   return (
-    <nav className={`max-w-screen ${styles.backgroundnew}`}>
+    <nav className={` ${styles.backgroundnew}`}>
       {/* Container for navbar items */}
-      <div className="w-screen h-full  flex justify-between  p-4">
+      <div className="flex justify-between p-5">
         
         {/* Logo Section */}
         <div className={`text-2xl font-bold text-blue-600 ${isMenuOpen ? 'hidden' : ''}`}>
@@ -49,9 +49,7 @@ export default function NavLinks() {
         </button>
 
         {/* Menu (links) section */}
-        <div
-          className={`md:flex items-start gap-4 ${isMenuOpen ? 'flex' : 'hidden'} md:block`}
-        >
+        <div className={`md:flex items-start gap-4 ${isMenuOpen ? 'flex' : 'hidden'} md:block`} >
           {/* Loop through each link */}
           {links.map((link) => {
             

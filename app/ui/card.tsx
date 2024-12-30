@@ -1,16 +1,22 @@
-
+import Image from "next/image";
 
 const Card = () => {
     return (
-      <div className="max-w-sm h-50 rounded overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
-        <div className="p-6">
-          <h2 className="text-xl font-bold text-gray-800 mb-2">Love</h2>
-          <p className="text-gray-600 mb-4">Gotta try again dfdsgjg fgdfgfdg fgfgfdgdfg fgfdg fghghgfh ghghghgh ghgfhgfhg ghgfhgfhgh ghgfhgfhgfh hggfhghgf ghgfhghg gfhgfhg ghgfhghg</p>
-          <button
-            className="px-4 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600"
-          >
-            Learn More
-          </button>
+      <div className={`mt-2 w-[100vw] h-50 rounded flex flex-col flex-wrap items-center shadow-lg transform transition duration-300 hover:scale-105 `}>
+        <div>
+        <Image
+        src="/articles/shoes.png"
+        width={200}
+        height={200}
+        alt="Screenshots of the dashboard project showing desktop version"
+        className={` mt-5`}  
+          />
+        </div>
+        <div>
+          <p>Casquette</p>
+        </div>
+        <div>
+          <p>25000</p>
         </div>
       </div>
     );
