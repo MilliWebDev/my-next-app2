@@ -2,7 +2,7 @@
 //import Link from 'next/link';
 import NavLinks from "./ui/nav-links";
 import Card from "./ui/card";
-import Create from "./ui/background";
+//import Create from "./ui/background";
 import Image from "next/image";
 
 export default function Home() {
@@ -15,15 +15,52 @@ export default function Home() {
       </header>
       <main>
       <section id="featureditems" className="mt-5">
-        <div className="flex justify-center">
-          <h2 className="uppercase font-bold leading-loose">les favoris</h2>
-        </div>
-        <div className="w-full p-2 gap-5 flex">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+        <div className="w-full p-2 gap-5 flex justify-around">
+          <div className="flex items-center">
+            <div>
+              <Image src="/icons/delivery.svg" alt="alt" width={80} height={80} />
+            </div>
+            <div>
+              <p>Livraison rapide</p>
+            </div>
+            
+          </div>
+          <div className="flex items-center">
+            <div>
+              <Image src="/icons/time.svg" alt="alt" width={80} height={80} />
+            </div>
+            <div>
+              <p>Livraison à temps</p>
+            </div>
+            
+          </div>
+
+          <div className="flex items-center">
+            <div>
+              <Image src="/icons/products.svg" alt="alt" width={80} height={80} />
+            </div>
+            <div>
+              <p>Produits de qualités</p>
+            </div>
+            </div>
+
+            <div className="flex items-center">
+            <div>
+              <Image src="/icons/energy.svg" alt="alt" width={80} height={80} />
+            </div>
+            <div>
+              <p>De nouveaux produits</p>
+            </div>
+            </div>
+
+            <div className="flex items-center">
+            <div>
+              <Image src="/icons/saving.svg" alt="alt" width={80} height={80} />
+            </div>
+            <div>
+              <p>Economisez sur vos achats</p>
+            </div>
+            </div>
         </div>
       </section>
       <section id="lessfavorites" className="w-full h-[500px] grid grid-cols-2  my-5 shadow-lg">
@@ -45,7 +82,7 @@ export default function Home() {
           </div>
            
         </div>
-        
+
         <div className="flex justify-center items-center border border-blue-800">
            <div>
            <Image
